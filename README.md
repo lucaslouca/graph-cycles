@@ -33,7 +33,7 @@ See the test class ``com.lucaslouca.graph.CycleUtilTest`` for more tests. You ca
 ###Algorithm summary
 1. Compute a cycle basis of graph ``G = (V, E)``
   * Find a minimal spanning tree ``(V, E')`` of ``G``, using <a href="http://en.wikipedia.org/wiki/Depth-first_search">Depth-first search (DFS)</a> and its associated set of back edges
-  * If ``e in B`` is a back edge, insert it into the minimal spanning tree's edges ``E'`` to form a set ``E'' = E' + {e}``. The resulting graph ``(V, E'')`` has exactly one cycle, which may be constructed by applying a DFS.
+  * If ``e in B`` is a back edge, insert it into the minimal spanning tree's edges ``E'`` to form a set ``E'' = E' + {e}``. The resulting graph ``(V, E'')`` has exactly one cycle, which may be constructed by applying a DFS
 2. Generate the *incidence vector* of each cycle in the cycle basis
 3. Create all possible combinations of the computed incidence vectors. Let the set of all combinations be ``C``
 4. Generate a cycle from each incidence vector in ``C``
