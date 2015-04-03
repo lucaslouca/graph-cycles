@@ -32,6 +32,5 @@ Example test:
 See the test class ``com.lucaslouca.graph.CycleUtilTest`` for more tests. You can also run ``com.lucaslouca.app.App`` located under ``src/main/java`` if you want to.
 
 ###References
-<a href="http://dspace.mit.edu/bitstream/handle/1721.1/68106/FTL_R_1982_07.pdf">Algorithmic Approaches To Circuit Enumeration and Applications</a>
-<br>
-<a href="http://en.wikipedia.org/wiki/Cycle_basis">Cycle basis</a>
+* <a href="http://dspace.mit.edu/bitstream/handle/1721.1/68106/FTL_R_1982_07.pdf">Algorithmic Approaches To Circuit Enumeration and Applications</a>
+* <a href="http://en.wikipedia.org/wiki/Cycle_basis">Cycle basis</a>
