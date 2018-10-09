@@ -30,6 +30,7 @@ Example test:
 ```
 
 See the test class ``com.lucaslouca.graph.CycleUtilTest`` for more tests. You can also run ``com.lucaslouca.app.App`` located under ``src/main/java`` if you want to.
+
 ### Algorithm summary
 
 The below described algorithm is implemented in <a href="https://github.com/lucaslouca/graph-cycles/blob/master/graph-cycles-app/src/main/java/com/lucaslouca/graph/CycleUtil.java">CycleUtil.java</a>
