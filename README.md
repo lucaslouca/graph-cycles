@@ -15,17 +15,17 @@ JUnit tests are located under ``src/test/java``.
 
 Example test:
 ```java
-	@Test
-	public void testNumberOfAllCycles() {
-		   Graph g = new Graph();
-		   g.addBidirectionalEdge(new Point(0, 0), new Point(0, 1));
-		   g.addBidirectionalEdge(new Point(0, 1), new Point(3, 1));
-		   g.addBidirectionalEdge(new Point(3, 1), new Point(3, 0));
-		   g.addBidirectionalEdge(new Point(3, 0), new Point(0, 0));
+@Test
+public void testNumberOfAllCycles() {
+    Graph g = new Graph();
+    g.addBidirectionalEdge(new Point(0, 0), new Point(0, 1));
+    g.addBidirectionalEdge(new Point(0, 1), new Point(3, 1));
+    g.addBidirectionalEdge(new Point(3, 1), new Point(3, 0));
+    g.addBidirectionalEdge(new Point(3, 0), new Point(0, 0));
 
-		   CycleUtil cycleUtil = new CycleUtil(g);
-		   List<Graph> cycles = cycleUtil.listAllCycles();
-		   assertEquals(1, cycles.size());
+    CycleUtil cycleUtil = new CycleUtil(g);
+    List<Graph> cycles = cycleUtil.listAllCycles();
+    assertEquals(1, cycles.size());
  }
 ```
 
