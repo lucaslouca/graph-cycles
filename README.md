@@ -14,19 +14,19 @@ Java application to list all cycles in an undirected and directed graph
 JUnit tests are located under ``src/test/java``.
 
 Example test:
->```java
->	@Test
->	public void testNumberOfAllCycles() {
->		Graph g = new Graph();
->		g.addBidirectionalEdge(new Point(0, 0), new Point(0, 1));
->		g.addBidirectionalEdge(new Point(0, 1), new Point(3, 1));
->		g.addBidirectionalEdge(new Point(3, 1), new Point(3, 0));
->		g.addBidirectionalEdge(new Point(3, 0), new Point(0, 0));
->
->		CycleUtil cycleUtil = new CycleUtil(g);
->		List<Graph> cycles = cycleUtil.listAllCycles();
->		assertEquals(1, cycles.size());
->	}
+```java
+	@Test
+	public void testNumberOfAllCycles() {
+		   Graph g = new Graph();
+		   g.addBidirectionalEdge(new Point(0, 0), new Point(0, 1));
+		   g.addBidirectionalEdge(new Point(0, 1), new Point(3, 1));
+		   g.addBidirectionalEdge(new Point(3, 1), new Point(3, 0));
+		   g.addBidirectionalEdge(new Point(3, 0), new Point(0, 0));
+
+		   CycleUtil cycleUtil = new CycleUtil(g);
+		   List<Graph> cycles = cycleUtil.listAllCycles();
+		   assertEquals(1, cycles.size());
+ }
 ```
 
 See the test class ``com.lucaslouca.graph.CycleUtilTest`` for more tests. You can also run ``com.lucaslouca.app.App`` located under ``src/main/java`` if you want to.
